@@ -10,20 +10,24 @@ import static java.lang.System.out;
 public class SphereArea {
     // TODO Fix the implementation by inserting the correct types!
     // Hint: IntelliJ can help you out.
-    public static final Scanner input = new Scanner(in);
 
+    public static final Scanner input = new Scanner(in);
+    
     public static float inputRadius() {
+        float theRadius;
         out.println("Give me a radius please > ");
         theRadius = input.nextFloat();
         return theRadius;
     }
 
-    public static void printAreaResult(theArea) {
-        out.println("This is the area: " + theArea);
+    public static void printAreaResult(float theArea) {
+        out.println("This is the area: " +  theArea);
     }
 
     private static void calculateSphereAreaProgram() {
         // TODO implement program here
+        float theRadius;
+        float theArea;
         theRadius = inputRadius();
         theArea = calculateArea(theRadius);
         printAreaResult(theArea);
@@ -31,11 +35,13 @@ public class SphereArea {
     }
 
     private static float calculateArea(float radius) {
+
         return (float)(4 * PI * pow(radius, 2));
     }
 
 
     public static void main(String[] args) {
+
         calculateSphereAreaProgram();
     }
 
