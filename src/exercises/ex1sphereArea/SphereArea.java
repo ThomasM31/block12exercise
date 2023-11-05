@@ -21,6 +21,7 @@ public class SphereArea {
     }
 
     public static void printAreaResult(float theArea) {
+
         out.println("This is the area: " +  theArea);
     }
 
